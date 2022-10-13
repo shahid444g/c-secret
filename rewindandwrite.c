@@ -6,7 +6,7 @@ int main () {
    int ch;
 
    /* First let's write some content in the file */
-   fp = fopen( "int.txt" , "w" );
+   fp = fopen( "int.txt" , "w+" );
    fwrite(str , 1 , sizeof(str) , fp );
    fclose(fp);
 

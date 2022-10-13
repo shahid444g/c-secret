@@ -1,5 +1,4 @@
-#include <stdio.h>
-    
+#include <stdio.h>    
 struct student
 {
     int rollno;
@@ -17,9 +16,7 @@ for (int i = 0; i < 3; i++)
     scanf("%d",&students[i].age);
     printf("enter the gender of %d student\n",i);
     scanf("%s",&students[i].gender);
-
 }
-
 for (int i = 0; i < 3; i++)
 {
     printf("the rollno of %d student is %d\n",i,students[i].rollno);
@@ -27,6 +24,5 @@ for (int i = 0; i < 3; i++)
     printf("the gender of %d student is %s\n",i,students[i].gender);
    
 }
-
     return 0;
 }

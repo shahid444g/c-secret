@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int shahid(int num);
 
 int main()

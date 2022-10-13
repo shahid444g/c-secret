@@ -7,13 +7,14 @@ int main(){
     for(x=0;x<4;x++)
     {
         printf("enter number%d\n",(x+1));
-         scamf("%d",&num[x]);
+         scanf("%d",&num[x]);
     }
     for(x=0;x<4;x++)
 {
     sum=sum+num[x];
 }
 avg=sum/4;
-printf("%d\n",avg);
+printf("sum is %d\n",sum);
+printf("average is %d\n",avg);
 return 0;
 }

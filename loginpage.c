@@ -4,14 +4,8 @@
 #include<stdlib.h>
 #include<time.h>
 void main(){
-    int v;
-   int s;
-  int c;
-  int ver;
-  int one;
-  int otp;
-    int i;
-    int z;
+    int v,s,c,ver,one,otp,i,z;
+   
     char number[10];
     char password[8];
     printf("ENTER THE MOBILE NUMBER\n");
