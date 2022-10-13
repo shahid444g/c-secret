@@ -1,0 +1,7 @@
+git remote add master https://github.com/shahid444g/javascript.git
+git add *.js 
+ git add *.html
+ git commit -m js
+  git push --set-upstream master master   
+  git pull
+  ctrl shift l to all occurences
