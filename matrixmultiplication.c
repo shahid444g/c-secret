@@ -1,12 +1,13 @@
 #include<stdio.h> 
  void main() 
  { 
-     int a[4][4],b[4][4],c[4][4]; 
-     int i,j,firstrow,firstcolumn,secondrow,secondcolumn,p,total; 
+    
+     int i,j,firstrow,firstcolumn,secondrow,secondcolumn,p,sum; 
      printf("enter the rows and colums of first matrix\n"); 
      scanf("%d%d",&firstrow,&firstcolumn); 
-     printf("enter the rows and colums of seond matrix\n"); 
+     printf("enter the rows and colums of second matrix\n"); 
      scanf("%d%d",&secondrow,&secondcolumn); 
+    int a[firstrow][firstcolumn],b[secondrow][secondcolumn],c[firstrow][secondcolumn]; 
      if(firstcolumn!=secondrow) 
      { 
          printf("matrix multiplication is not possible\n"); 
@@ -30,6 +31,7 @@
          for(j=0; j<secondcolumn; j++) 
          { 
              scanf("%d",&b[i][j]); 
+           
          } 
        
      } 
@@ -53,25 +55,19 @@
          } 
          printf("\n"); 
      } 
-     for(i=0; i<firstrow; i++) 
-     { 
-         for(j=0; j<secondcolumn; j++) 
-         { 
-             c[i][j]=0; 
-         } 
-         printf("\n"); 
-     } 
+     
      for(i=0; i<firstrow; i++) 
      { 
          for(j=0; j<secondcolumn; j++) 
          { 
              for(p=0; p<firstcolumn; p++) 
              { 
-                 total=0; 
-                 total=total+a[i][p]*b[p][j]; 
-                 c[i][j]+=total; 
-                  
+                 
+         sum+=a[i][p]*b[p][j]; 
+                   
              } 
+           c[i][j]=sum; 
+           sum=0;
          } 
          printf("\n"); 
      } 
