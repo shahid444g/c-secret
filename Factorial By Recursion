@@ -1,0 +1,20 @@
+#include <stdio.h>
+int func(int s);
+int func(int s){
+ int pro =1;
+if(s >=1)
+{
+  return s * func(s-1);
+  
+}
+  else{
+   return 1;
+    }
+  }
+int main(void) {
+  int inp;
+  printf("enter The Number");
+  scanf("%d",&inp);
+  printf("%d",func(inp));
+  return 0;
+}
